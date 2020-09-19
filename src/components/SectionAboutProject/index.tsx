@@ -4,9 +4,9 @@ import Heading from 'components/Heading'
 import Container from 'components/Container'
 
 import { SectionAboutProjectProps } from 'types/api'
+import { getImageUrl } from 'utils/getImageUrl'
 
 import * as S from './styles'
-import { getImageUrl } from 'utils/getImageUrl'
 
 const SectionAboutProject = ({
   title,
