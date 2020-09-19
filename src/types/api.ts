@@ -3,6 +3,11 @@ export type Image = {
   url: string
 }
 
+export type Button = {
+  label: string
+  url: string
+}
+
 export type Icon = {
   url: string
 }
@@ -22,9 +27,17 @@ export type TechIcon = {
   title: string
 }
 
-export type ButtonProps = {
-  label: string
+export type SocialLink = {
+  title: string
   url: string
+}
+
+export type Author = {
+  photo: Image
+  name: string
+  role: string
+  socialLinks: SocialLink[]
+  description: string
 }
 
 export type LogoProps = {
@@ -35,7 +48,7 @@ export type LogoProps = {
 export type HeaderProps = {
   title: string
   description: string
-  button: ButtonProps
+  button: Button
   image: Image
 }
 
@@ -70,7 +83,12 @@ export type PricingBoxProps = {
   numberInstallments: number
   priceInstallment: number
   benefits: string
-  button: ButtonProps
+  button: Button
+}
+
+export type SectionAboutUsProps = {
+  title: string
+  authors: Author[]
 }
 
 export type LandingPageProps = {
@@ -82,4 +100,5 @@ export type LandingPageProps = {
   sectionModules: SectionModulesProps
   sectionAgenda: SectionAgendaProps
   pricingBox: PricingBoxProps
+  sectionAboutUs: SectionAboutUsProps
 }
