@@ -22,6 +22,14 @@ export type Module = {
   description: string
 }
 
+export type Review = {
+  photo: {
+    url: string
+  }
+  name: string
+  text: string
+}
+
 export type TechIcon = {
   icon: Icon
   title: string
@@ -91,6 +99,11 @@ export type SectionAboutUsProps = {
   authors: Author[]
 }
 
+export type SectionReviewsProps = {
+  title: string
+  reviews: Review[]
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
@@ -101,4 +114,5 @@ export type LandingPageProps = {
   sectionAgenda: SectionAgendaProps
   pricingBox: PricingBoxProps
   sectionAboutUs: SectionAboutUsProps
+  sectionReviews: SectionReviewsProps
 }
